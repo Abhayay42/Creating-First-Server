@@ -1,10 +1,10 @@
 const express = require('express');
 const path = require('path')
-const port = 9000;
+const port = 12000;
 const app = express();
 
 app.set('view engine','ejs');
-app.set('dirs',path.join(__dirname,'dirs'))
+app.set('views',path.join(__dirname,'views'))
 
 app.get('/', function(req,res){
     return res.render('profile',{
