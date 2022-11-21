@@ -7,7 +7,7 @@ app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'views'))
 
 app.get('/', function(req,res){
-    return res.render('profile',{
+    return res.render('profile',{ 
         title:"my profile!"
     })
 })
